@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main(void) 
+int main() 
 {
     double num1;
     double num2;
@@ -17,4 +17,5 @@ int main(void)
     } else {
         printf("Both %f and %f are equal", num1, num2);
     }
+    return 0;
 }
