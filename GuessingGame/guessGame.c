@@ -9,7 +9,7 @@ int main() {
     int h = 0;
     printf("Welcome to the Guessing Game~~!\nYou have total of 5 changes to guess the mystery number.\nYou can also use 1 hint by typing 777\n");
 
-    while(i<5 && h < 2) {
+    while(i < 5 && h < 2) {
         printf("Guess a number between 1~10: ");
         scanf("%lf", &userGuess);
         if (userGuess == ranNum) {
@@ -33,7 +33,7 @@ int main() {
         
     }
 
-    printf("You have used all your chances!\n");
+    printf("GAME OVER\nYou have used all your chances!\n");
 
     return 0;
 }
