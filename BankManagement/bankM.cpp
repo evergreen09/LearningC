@@ -3,6 +3,8 @@
 
 using namespace std;
 
+int m = 0;
+
 void new_acc() {
     cout << "Creates a new customer account\n";
 }
@@ -30,6 +32,7 @@ void acc_detail() {
 void menu() {
 
     int option;
+    
 
     cout << "Welcome to BullShit Bank~!\n" << "Please select one of the menu below to proceed.\n";
     cout << "1) Create an account.\n";
@@ -42,7 +45,7 @@ void menu() {
 
     cin >> option;
 
-for(int i = 0; i < 2; i++) {
+
     if (option > 0 && option < 8) {
         switch(option) {
         case 1:
@@ -66,13 +69,14 @@ for(int i = 0; i < 2; i++) {
         case 7:
             abort();
         }
-    } else {
+    } else if (m < 1) {
+        m++;
         cout << "Please Enter a Valid Option or Program will terminate!\n";
+        menu();
         cin >> option;
+    } else {
+        abort();
     }
-}
-    
-
 }
 
 
